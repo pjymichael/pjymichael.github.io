@@ -1,4 +1,4 @@
-# Michael Pang's Personal Site
+# (Michael Pang's Personal Site)[pjymicahel.github.io]
 
 Sadly, I'm too broke to host it and get my own domain name. But free resource = best resource!
 
