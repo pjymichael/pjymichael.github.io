@@ -1,0 +1,24 @@
+.tech-stack {
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.tech-stack-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.tech-stack-label {
+    text-align: center;
+}
+
+.tech-stack-items i {
+    margin: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-stack-items i:hover {
+    transform: scale(1.4);
+}
