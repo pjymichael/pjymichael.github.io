@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
   <head>
     <title>Michael Pang's Personal site</title>
@@ -16,33 +11,24 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+    $.get("nav-bar.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+
+    $.get("footer.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+    });
+    </script>
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
     <div id="wrapper">
-      <!-- Header -->
-      <header id="header" class="alt">
-        <a href="index.html" class="logo"
-          ><strong>MICHAEL</strong> <span>WIP</span></a
-        >
-        <nav>
-          <a href="#menu">Menu</a>
-        </nav>
-      </header>
 
-      <!-- Menu -->
-      <nav id="menu">
-        <ul class="links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="landing.html">Landing</a></li>
-          <li><a href="generic.html">Generic</a></li>
-          <li><a href="element.html">Elements</a></li>
-        </ul>
-        <ul class="actions stacked">
-          <li><a href="#" class="button primary fit">Get Started</a></li>
-          <li><a href="#" class="button fit">Log In</a></li>
-        </ul>
-      </nav>
+      <!-- nav-bar -->
+      <div id="nav-placeholder"></div>
+      <!-- end of nav-bar-->
 
       <!-- Banner -->
       <section id="banner" class="major">
@@ -62,7 +48,7 @@
             </p>
             <ul class="actions">
               <li>
-                <a href="#one" class="button next scrolly"
+                <a href="projects.html" class="button next scrolly"
                   >Check out my projects!</a
                 >
               </li>
@@ -80,7 +66,7 @@
               <img src="images/rockStack.jpg" alt="" />
             </span>
             <header class="major">
-              <h3><a href="techStack.html" class="link">My Tech Stack</a></h3>
+              <h3><a href="tech-stack.html" class="link">My Tech Stack</a></h3>
               <p>Discover my ever-growing tech stack</p>
             </header>
           </article>
@@ -209,41 +195,9 @@
       </section>
 
       <!-- Footer -->
-      <footer id="footer">
-        <div class="inner">
-          <ul class="icons">
-            <!-- <li> -->
-            <!-- <a href="#" class="icon brands alt fa-twitter"
-                ><span class="label">Twitter</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon brands alt fa-facebook-f"
-                ><span class="label">Facebook</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon brands alt fa-instagram"
-                ><span class="label">Instagram</span></a
-              >
-            </li> -->
-            <li>
-              <a href="https://github.com/pjymichael" class="icon brands alt fa-github" target="_blank">
-                <span class="label">GitHub</span></a
-              >
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/pang-michael/" class="icon brands alt fa-linkedin-in" target="_blank">
-                <span class="label">LinkedIn</span></a
-              >
-            </li>
-          </ul>
-          <ul class="copyright">
-            <li>&copy; Michael</li>
-            <li>Design inspired by <a href="https://html5up.net">HTML5 UP</a>, Developed by Michael Pang</li>
-          </ul>
-        </div>
-      </footer>
+      <div id="footer-placeholder"></div>
+      <!-- end of Footer -->
+      
     </div>
 
     <!-- Scripts -->

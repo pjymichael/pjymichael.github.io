@@ -14,39 +14,29 @@
     />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/techStack.css" />
+    <link rel="stylesheet" href="assets/css/tech-stack.css" />
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"/>
     </noscript>
     <script src="https://kit.fontawesome.com/77ac48dcb8.js" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+    $.get("nav-bar.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+
+    $.get("footer.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+    });
+    </script>
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
     <div id="wrapper">
-      <!-- Header -->
-      <!-- Note: The "styleN" class below should match that of the banner element. -->
-      <header id="header" class="alt style2">
-        <a href="index.html" class="logo"
-          ><strong>MICHAEL</strong> <span>WIP</span></a
-        >
-        <nav>
-          <a href="#menu">Menu</a>
-        </nav>
-      </header>
 
-      <!-- Menu -->
-      <nav id="menu">
-        <ul class="links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="landing.html">Landing</a></li>
-          <li><a href="generic.html">Generic</a></li>
-          <li><a href="elements.html">Elements</a></li>
-        </ul>
-        <ul class="actions stacked">
-          <li><a href="#" class="button primary fit">Get Started</a></li>
-          <li><a href="#" class="button fit">Log In</a></li>
-        </ul>
-      </nav>
+      <!-- nav-bar -->
+      <div id="nav-placeholder"></div>
+      <!-- end of nav-bar-->
 
       <!-- Banner -->
       <!-- Note: The "styleN" class below should match that of the header element. -->
@@ -235,41 +225,8 @@
         </section>
       
       <!-- Footer -->
-      <footer id="footer">
-        <div class="inner">
-          <ul class="icons">
-            <li>
-              <a href="#" class="icon brands alt fa-twitter"
-                ><span class="label">Twitter</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon brands alt fa-facebook-f"
-                ><span class="label">Facebook</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon brands alt fa-instagram"
-                ><span class="label">Instagram</span></a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/pjymichael" class="icon brands alt fa-github" target="_blank">
-                <span class="label">GitHub</span></a
-              >
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/pang-michael/" class="icon brands alt fa-linkedin-in" target="_blank">
-                <span class="label">LinkedIn</span></a
-              >
-            </li>
-          </ul>
-          <ul class="copyright">
-            <li>&copy; Michael</li>
-            <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-          </ul>
-        </div>
-      </footer>
+      <div id="footer-placeholder"></div>
+      <!-- end of Footer -->
     </div>
 
     <!-- Scripts -->
